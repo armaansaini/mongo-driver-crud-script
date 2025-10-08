@@ -5,17 +5,6 @@ import (
 	"fmt"
 )
 
-/*
-
-1. Try duplicate id in insert bulk run to see functionality of unordered bulk update.
-2. Try to timeout the query with findWithTimeout
-
-
-
-*/
-
-
-
 func main(){
 
 	fmt.Println("\n")
@@ -38,7 +27,7 @@ func main(){
 	models.FindOne() // find first document
 	models.FindById(insertedId) // find by id
 	models.FindByName("test1")
-	models.FindAllWithFilter(5000) // use balance as filter
+	models.FindAllWithFilter(5200) // use balance as filter
 	models.FindAll();
 	models.IterRead();
 	models.FindAllWithOptions()
